@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Blinking Text</title>
+    <style>
+        :root {
+         background: yellowgreen;
+}
+.blinking-text{
+    display: flex;
+    justify-content: space-between;
+    border: 15px solid;
+}
+        @keyframes blink {
+            0% {
+                opacity: 14;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-text {
+            text-align: center;
+            margin-top: 20%;
+            font-size: 24px;
+            color: rgb(128, 73, 0);
+            animation: blink 1s infinite;
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blinking-text">
+        <img src="cricket.jpg">
+        <img src="Football.jpg" width="200px" height="200px">
+
+        
+    </div>
+</body>
+
+</html>
